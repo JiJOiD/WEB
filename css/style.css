@@ -1,0 +1,204 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+
+body {
+  /* background-image: url(/images/BG\ Stars.png) ; */
+  background-color: black;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+:root{
+  --text-color1: white;
+  --text-color2: #10151A;
+  --text-color3: #FFD600;
+  font-family: "PT Mono";
+  font-size: 62.5%;
+}
+.header{
+
+}
+
+.header-link {
+  color:var(--text-color1);
+  font-size: 1.688rem;
+  
+}
+
+.superdao {
+}
+.logo {
+}
+.header-menu {
+}
+.header-menu-icon {
+}
+.main {
+}
+.section-hero {
+}
+.container {
+  /* max-width: 28.8rem; */
+  margin: 0 1.6rem 0 1.6rem;
+}
+.section-hero-title {
+  color:var(--text-color1);
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-align: center;
+  font-style: normal;
+  line-height: 4rem; /* 125% */
+  text-shadow: 0px 4px 18px rgba(0, 0, 0, 0.30);
+}
+.hero-img {
+}
+.section-hero-description {
+  color:var(--text-color1);
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  font-style: normal;
+  line-height: 2.4rem; /* 160% */
+  opacity: 0.8;
+}
+.section-hero-link {
+}
+.section-super {
+}
+.super-title {
+}
+.super-img {
+}
+.super-list {
+}
+.super-list-item {
+}
+.super-list-item-heading {
+}
+.super-list-item-discription {
+}
+.section-border {
+}
+.section-borapps {
+}
+.border-apps-icon {
+}
+.border-apps-heading {
+}
+.border-apps-list {
+}
+.border-apps-list-item {
+}
+.border-apps-list-item-circle {
+}
+.border-apps-list-item-text {
+}
+.section-border-systems {
+}
+.border-systems-icon {
+}
+.border-systems-heading {
+}
+.border-systems-list {
+}
+.border-systems-list-item {
+}
+.border-systems-list-item-heading {
+}
+.border-systems-list-item-discription {
+}
+.section-border-blockchains {
+}
+.border-blockchains-icon {
+}
+.border-blockchains-heading {
+}
+.border-blockchains-list {
+}
+.border-blockchains-list-item {
+}
+.border-blockchains-list-item-icon {
+}
+.border-blockchains-list-item-text {
+}
+.section-club {
+}
+.club-heading {
+}
+.club-discription {
+}
+.club-list {
+}
+.club-list-item {
+}
+.club-list-item-icon {
+}
+.club-list-item-text {
+}
+.club-btn {
+}
+.club-link {
+}
+.section-learn {
+}
+.learn-heading {
+}
+.learn-cards {
+}
+.learn-cards-item {
+}
+.card {
+}
+.card-img {
+}
+.card-heading {
+}
+.card-text {
+}
+.section-sponsors {
+}
+.sponsors-heading {
+}
+.companies {
+}
+.companies-list {
+}
+.companies-list-item {
+}
+.companies-list-item-icon {
+}
+.people {
+}
+.people-list {
+}
+.people-list-item {
+}
+.people-list-item-text {
+}
+.footer {
+}
+.footer-top {
+}
+.footer-top-link {
+}
+.footer-top-logo {
+}
+.footer-top-list {
+}
+.footer-top-list-item {
+}
+.footer-top-list-item-link {
+}
+.footer-top-item-link-icon {
+}
+.footer-bottom {
+}
+.footer-bottom-link {
+}
