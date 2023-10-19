@@ -6,16 +6,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    
     <title>Home page</title>
 </head>
 <body>
     <header class="header">
-        <a class="header-link superdao" href=""><img class="logo" src="" alt="">Superdao</a>
-        <button class="header-menu">
-            <img class="header-menu-icon" src="" alt="">
-        </button>
+        <div class="container">
+            <a class="header-link superdao" href=""><img class="logo" src="" alt="">Superdao</a>
+            <button class="header-menu">
+                <img class="header-menu-icon" src="" alt="">
+            </button>
+        </div>
     </header>
     <main class="main">
         <section class="section-hero">
@@ -33,11 +36,11 @@
                         <h3 class="super-list-item-heading">Formation</h3>
                         <p class="super-list-item-discription">Template-based DAO creation in one click</p>
                     </li>
-                    <li>
+                    <li class="super-list-item">
                         <h3 class="super-list-item-heading">Starter pack</h3>
                         <p class="super-list-item-discription">Member directory and contributor rewards</p>
-                    </li class="super-list-item-heading">
-                    <li class="super-list-item-heading">
+                    </li>
+                    <li class="super-list-item">
                         <h3 class="super-list-item-heading">App ecosystem</h3>
                         <p class="super-list-item-discription">Third-party apps for every need</p>
                     </li>
@@ -82,7 +85,7 @@
                 </div>
                 <div class="section-border-systems">
                     <img class="border-systems-icon" src="" alt="">
-                    <h3 class="border-systems-heading">Superdao operating system</h3>
+                    <h3 class="border-systems-heading"><span class="border-systems-heading1">Superdao</span> operating system</h3>
                     <ul class="border-systems-list">
                         <li class="border-systems-list-item">
                             <h3 class="border-systems-list-item-heading">Ownership</h3>
@@ -199,7 +202,7 @@
         </section>
         <section class="section-sponsors">
             <div class="container">
-                <h2 class="sponsors-heading">Bavked by</h2>
+                <h2 class="sponsors-heading">Backed by</h2>
                 <div class="companies">
                     <ul class="companies-list">
                         <li class="companies-list-item"><img class="companies-list-item-icon" src="" alt=""></li>
@@ -229,9 +232,9 @@
             </ul>
         </div>
         <ul class="footer-bottom">
-            <a class="footer-bottom-link" href="">Roadmap club</a>
-            <a class="footer-bottom-link" href="">About</a>
-            <a class="footer-bottom-link" href="">Jobs</a>
+            <li class="footer-bottom-item"><a class="footer-bottom-link" href="">Roadmap club</a></li>
+            <li class="footer-bottom-item"><a class="footer-bottom-link" href="">About</a></li>
+            <li class="footer-bottom-item"><a class="footer-bottom-link" href="">Jobs</a></li>
         </ul>
     </footer>
 </body>
