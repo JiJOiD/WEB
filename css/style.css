@@ -22,25 +22,30 @@ a {
   font-family: "PT Mono";
   font-size: 62.5%;
 }
-.header{
-  margin: 0rem 1.6rem 0rem 1.6rem;
+.header-container{
   padding: 1.6rem 0rem 1.6rem 0rem;
-
+  display: flex;
+  align-items: center;
 }
 
 .header-link {
   color:var(--text-color1);
+  display: inline-flex;
   font-size: 1.688rem;
-  
+  /* margin: 0rem 13.68rem 0rem 6.02rem; */
+  align-items: flex-start;
+  flex-shrink: 0;
 }
 
 .superdao {
 }
 .logo {
+  margin: 0rem 0.79rem 0rem 0rem;
 }
 .header-menu {
 }
 .header-menu-icon {
+  
 }
 .main {
 }
@@ -62,6 +67,9 @@ a {
   margin: 4rem 1.6rem 0rem 1.6rem;
 }
 .hero-img {
+  background-image: url(/images/Underline_1.svg);
+  background-repeat: no-repeat;
+  
 }
 .section-hero-description {
   color:var(--text-color1);
@@ -75,8 +83,8 @@ a {
 }
 .section-hero-link {
   display: inline-flex;
-  margin: 3.2rem 7.9rem 0rem 7.9rem;
-  /* padding: 0.8rem 2.8rem; */
+  margin: 3.2rem 6.3rem 0rem 6.3rem;
+  padding: 0.8rem 2.8rem;
   justify-content: center;
   align-items: center;
   border-radius: 1.2rem;
@@ -105,6 +113,11 @@ a {
   line-height: 3.2rem; /* 114.286% */
 }
 .super-img {
+  background-image: url(/images/Underline_2.svg);
+  background-repeat: no-repeat;
+  transform: rotate(-90deg);
+  flex-shrink: 0;
+  
 }
 .super-list {
 
@@ -239,7 +252,29 @@ a {
 .border-blockchains-list-item {
 
 }
-.border-blockchains-list-item-icon {
+.border-blockchains-list-item-icon-Ethereum {
+  background-image: url(/images/Ethereum\ \(ETH\).svg);
+}
+.border-blockchains-list-item-icon-Solana{
+  background-image: url(/images/Solana\ \(SOL\).svg);
+}
+.border-blockchains-list-item-icon-Terra{
+  background-image: url(/images/Icon_terra.svg);
+}
+.border-blockchains-list-item-icon-Polygon{
+  background-image: url(/images/Polygon\ \(MATIC\).svg);
+}
+.border-blockchains-list-item-icon-Binance{
+  background-image: url(/images/Binance\ Coin\ \(BNB\).svg);
+}
+.border-blockchains-list-item-icon-NEAR{
+  background-image: url(/images/NEAR\ Protocol\ \(NEAR\).svg);
+}
+.border-blockchains-list-item-icon-Avalanche{
+  background-image: url(/images/Avalanche\ \(AVAX\).svg);
+}
+.border-blockchains-list-item-icon-more{
+  background-image: url(/images/more.svg);
 }
 .border-blockchains-list-item-text {
   font-size: 1.2rem;
@@ -281,6 +316,7 @@ a {
   margin-bottom: 1.2rem;
 }
 .club-list-item-icon {
+  background-image: url(/images/Icon_wing.svg);
 }
 .club-list-item-text {
   font-size: 1.4rem;
@@ -330,6 +366,8 @@ a {
   margin-top: 8rem;
 }
 .learn-heading {
+  background-image: url(/images/Underline_3.svg);
+  background-repeat: no-repeat;
   text-align: center;
   text-shadow: 0px 2px 25px rgba(0, 0, 0, 0.60);
   font-size: 2.8rem;
