@@ -479,13 +479,14 @@ a {
   justify-content: space-between;
 }
 .footer-bottom-link {
-  
+  color: var(--text-color2)
 }
-.footer-bottom-item {
+.footer-bottom-item  {
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 700;
   line-height: 2.4rem;
   opacity: 0.7;
+  
   /* margin: 1.89rem; */
 }
