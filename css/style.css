@@ -19,7 +19,7 @@ a {
   --text-color1: white;
   --text-color2: #10151A;
   --text-color3: #FFD600;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "IBM Plex Mono";
   font-size: 62.5%;
 }
 .header-container{
@@ -50,6 +50,8 @@ a {
 .main {
 }
 .section-hero {
+  margin-top: 2.4rem;
+  align-items: center;
 
 }
 .container {
@@ -64,7 +66,7 @@ a {
   font-style: normal;
   line-height: 4rem; /* 125% */
   text-shadow: 0px 0.4rem 1.8rem rgba(0, 0, 0, 0.30);
-  margin: 4rem 1.6rem 0rem 1.6rem;
+  /* margin: 4rem 1.6rem 0rem 1.6rem; */
 }
 .hero-img {
   background-image: url(/images/Underline_1.svg);
@@ -84,20 +86,20 @@ a {
 .section-hero-link {
   display: inline-flex;
   margin: 3.2rem 6.3rem 0rem 6.3rem;
-  padding: 0.8rem 2.8rem;
+  /* padding: 0.8rem 2.8rem; */
   justify-content: center;
   align-items: center;
   border-radius: 1.2rem;
   background: linear-gradient(180deg, #FFD600 0%, #FFB800 100%);
   box-shadow: 0px 0.9rem 4.4rem 0px rgba(255, 214, 0, 0.19);
-  color: #10151A;
   text-align: center;
-  font-family: PT Mono;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 700;
   line-height: 3.2rem; /* 200% */
-  color: #10151A;
+  color: var(--text-color2);
+  height: 4.8rem;
+  width: 16.2rem;
 }
 .section-super {
   margin: 8rem 1.6rem 0 1.6rem;
@@ -166,16 +168,19 @@ a {
 .border-apps-list {
   margin: 1.6rem 1.6rem 0 1.6rem;
   display: inline-flex;
+  flex-wrap: wrap;
   align-items: flex-start;
 }
 .border-apps-list-item {
   flex-shrink: 0;
   background: rgba(255, 255, 255, 0.10);
-  margin-right: 0.8rem;
+  /* margin-right: 0.8rem; */
   /* height: 2.4rem; */
   padding-left: 0.8rem;
   padding-right: 0.8rem;
   border-radius: 0.4rem;
+  flex-wrap: wrap;
+  gap: .5rem;
 }
 .border-apps-list-item-circle {
 }
@@ -247,9 +252,25 @@ a {
   line-height: 2.4rem;
   color: var(--text-color3);
 }
+/* Доделать wrap */
 .border-blockchains-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
 }
+
 .border-blockchains-list-item {
+  display: inline-flex;
+  /* padding: 0.8rem 2rem 0.8rem 0.8rem; */
+  gap: 0.8rem;
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.10);
+  min-width: 12.2rem;
+  min-height: 4.4rem;
+  text-align: center;
+  align-items: center;
+
 
 }
 .border-blockchains-list-item-icon-Ethereum {
@@ -340,7 +361,7 @@ a {
   line-height: 3.2rem; 
   text-align: center;
   font-family: PT Mono;
-  color: #10151A;
+  color: var(--text-color2);
   height: 4.8rem;
   width: 25.6rem; 
   margin: 2.8rem 3.2rem 0 0rem;
