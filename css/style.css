@@ -5,11 +5,7 @@
 	list-style: none;
 } */
 
-body {
-  /* background-image: url(/images/BG\ Stars.png) ; */
-  background-color:  #10151A;;
 
-}
 
 a {
   text-decoration: none;
@@ -19,8 +15,13 @@ a {
   --text-color1: white;
   --text-color2: #10151A;
   --text-color3: #FFD600;
-  font-family: "PT Mono", "IBM Plex Mono";
+  font-family: "PT Mono", "IBM Plex Mono", monospace;
   font-size: 62.5%;
+}
+body {
+  /* background-image: url(/images/BG\ Stars.png) ; */
+  background-color: var(--text-color2);
+
 }
 .header-container{
   padding: 1.6rem 0rem 1.6rem 0rem;
@@ -51,7 +52,7 @@ a {
 }
 .section-hero {
   margin-top: 2.4rem;
-  align-items: center;
+  text-align: center;
 
 }
 .container {
@@ -71,7 +72,7 @@ a {
 .hero-img {
   background-image: url(/images/Underline_1.svg);
   background-repeat: no-repeat;
-  
+  background-color: var(--text-color2);
 }
 .section-hero-description {
   color:var(--text-color1);
@@ -85,7 +86,7 @@ a {
 }
 .section-hero-link {
   display: inline-flex;
-  margin: 3.2rem 6.3rem 0rem 6.3rem;
+  /* margin: 3.2rem 6.3rem 0rem 6.3rem; */
   /* padding: 0.8rem 2.8rem; */
   justify-content: center;
   align-items: center;
@@ -158,7 +159,9 @@ a {
 .border-apps-icon {
 }
 .border-apps-heading {
-  margin: 0.4rem 11.8rem 0 9.4rem;
+  /* margin: 0.4rem 11.8rem 0 9.4rem; */
+  margin-bottom: 1.6rem;
+  text-align: center;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 700;
@@ -166,23 +169,31 @@ a {
   color: var(--text-color3);
 }
 .border-apps-list {
-  margin: 1.6rem 1.6rem 0 1.6rem;
+  /* margin: 1.6rem 1.6rem 0 1.6rem; */
   display: inline-flex;
+  justify-content: space-around;
+  gap: 0.8rem;
   flex-wrap: wrap;
   align-items: flex-start;
+  margin-bottom: 3.2rem;
 }
 .border-apps-list-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
   flex-shrink: 0;
   background: rgba(255, 255, 255, 0.10);
   /* margin-right: 0.8rem; */
   /* height: 2.4rem; */
-  padding-left: 0.8rem;
+  /* padding-left: 0.8rem; */
   padding-right: 0.8rem;
   border-radius: 0.4rem;
-  flex-wrap: wrap;
-  gap: .5rem;
+  /* flex-wrap: wrap; */
+  /* gap: .5rem; */
+  gap: 0.2rem;
 }
-.border-apps-list-item-circle {
+.border-apps-list-item-circle-1 {
+
 }
 .border-apps-list-item-text {
   font-size: 1.4rem;
@@ -190,6 +201,7 @@ a {
   font-weight: 700;
   line-height: 2.4rem;
   color: var(--text-color1);
+  
 }
 .section-border-systems {
 }
@@ -208,7 +220,7 @@ a {
   
 }
 .border-systems-list {
-  
+  margin-bottom: 3.2rem ;
 }
 .border-systems-list-item {
   display: flex;
@@ -239,63 +251,110 @@ a {
   color: var(--text-color1);
 }
 .section-border-blockchains {
-  margin: 0 1.6rem 0 1.6rem;
+  /* margin: 0 1.6rem 0 1.6rem; */
 }
 .border-blockchains-icon {
+
 }
 
 .border-blockchains-heading {
-  margin: 3.2rem 8.1rem 0 5.6rem;
+  /* margin: 3.2rem 8.1rem 0 5.6rem; */
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 700;
   line-height: 2.4rem;
   color: var(--text-color3);
+  margin-bottom: 1.6rem;
+  text-align: center;
 }
 /* Доделать wrap */
 .border-blockchains-list {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-bottom: 2.4rem;
   
 }
 
 .border-blockchains-list-item {
   display: inline-flex;
-  /* padding: 0.8rem 2rem 0.8rem 0.8rem; */
+  /* justify-content: space-around; */
+  padding-left: 0.8rem;
   gap: 0.8rem;
   border-radius: 1.2rem;
   background: rgba(255, 255, 255, 0.10);
   min-width: 12.2rem;
   min-height: 4.4rem;
-  text-align: center;
+  
   align-items: center;
 
 
 }
 .border-blockchains-list-item-icon-Ethereum {
-  background-image: url(/images/Ethereum\ \(ETH\).svg);
+  /* background-image: url(/images/Ethereum\ \(ETH\).svg); */
+  display: flex;
+  width: 2.8rem;
+  height: 2.8rem;
+  justify-content: center;
+  align-items: center;
 }
 .border-blockchains-list-item-icon-Solana{
-  background-image: url(/images/Solana\ \(SOL\).svg);
+  /* background-image: url(/images/Solana\ \(SOL\).svg); */
+  display: flex;
+  width: 2.8rem;
+  height: 2.8rem;
+  justify-content: center;
+  align-items: center;
 }
 .border-blockchains-list-item-icon-Terra{
-  background-image: url(/images/Icon_terra.svg);
+  /* background-image: url(/images/Icon_terra.svg); */
+  display: flex;
+  width: 2.8rem;
+  height: 2.8rem;
+  justify-content: center;
+  align-items: center;
 }
 .border-blockchains-list-item-icon-Polygon{
-  background-image: url(/images/Polygon\ \(MATIC\).svg);
+  /* background-image: url(/images/Polygon.svg); */
+  display: flex;
+  width: 2.8rem;
+  height: 2.8rem;
+  justify-content: center;
+  align-items: center;
 }
 .border-blockchains-list-item-icon-Binance{
-  background-image: url(/images/Binance\ Coin\ \(BNB\).svg);
+  /* background-image: url(/images/Binance\ Coin\ \(BNB\).svg); */
+  display: flex;
+  width: 2.8rem;
+  height: 2.8rem;
+  justify-content: center;
+  align-items: center;
 }
 .border-blockchains-list-item-icon-NEAR{
-  background-image: url(/images/NEAR\ Protocol\ \(NEAR\).svg);
+  /* background-image: url(/images/NEAR\ Protocol\ \(NEAR\).svg); */
+  display: flex;
+  width: 2.8rem;
+  height: 2.8rem;
+  justify-content: center;
+  align-items: center;
 }
 .border-blockchains-list-item-icon-Avalanche{
-  background-image: url(/images/Avalanche\ \(AVAX\).svg);
+  /* background-image: url(); */
+  display: flex;
+  width: 2.8rem;
+  height: 2.8rem;
+  justify-content: center;
+  align-items: center;
 }
 .border-blockchains-list-item-icon-more{
-  background-image: url(/images/more.svg);
+  /* background-image: url(/images/more.svg); */
+  display: flex;
+  width: 2.8rem;
+  height: 2.8rem;
+  justify-content: center;
+  align-items: center;
 }
 .border-blockchains-list-item-text {
   font-size: 1.2rem;
@@ -303,6 +362,7 @@ a {
   font-weight: 700;
   line-height: 2.4rem;
   color: var(--text-color1);
+  text-align: center;
 }
 .section-club {
   margin: 8rem 1.6rem 0 1.6rem;
@@ -348,8 +408,8 @@ a {
   margin: 0 0 0 2.4rem;
 }
 .club-btn {
-  display: inline-flex;
-  /* padding: 0.8rem 6.1rem 0.8rem 6rem; */
+  display: flex;
+  padding: 0.8rem 5rem 0.8rem 5rem;
   justify-content: center;
   align-items: center;
   border-radius: 1.2rem;
@@ -362,13 +422,14 @@ a {
   text-align: center;
   font-family: PT Mono;
   color: var(--text-color2);
-  height: 4.8rem;
-  width: 25.6rem; 
-  margin: 2.8rem 3.2rem 0 0rem;
+  /* height: 4.8rem; */
+  max-width: 25.6rem; 
+  margin: 2.8rem auto 0 auto;
+  width: 100%;
 }
 .club-link {
-  display: inline-flex;
-  /* padding: 0.8rem 8rem; */
+  display: flex;
+  padding: 0.8rem 0rem 0.8rem 0rem;
   justify-content: center;
   align-items: center;
   border-radius: 1.2rem;
@@ -379,9 +440,10 @@ a {
   line-height: 3.2rem;
   text-align: center;
   color: var(--text-color1);
-  height: 4.8rem;
-  margin: 1.2rem 3.2rem 0 0rem;
-  width: 25.6rem;
+  /* height: 4.8rem; */
+  margin: 1.2rem auto 0 auto;
+  max-width: 25.6rem;
+  width: 100%;
 }
 .section-learn {
   margin-top: 8rem;
@@ -404,6 +466,9 @@ a {
   
 }
 .card {
+  /* display: flex;
+  justify-content: center;
+  flex-wrap: wrap; */
   /* width: 28.8rem;
   height: 12.4rem; */
   flex-shrink: 0;
@@ -411,6 +476,9 @@ a {
   margin-top: 15.2rem;
 }
 .card-img {
+  /* width: 29.1rem;
+  height: 20.1429rem;
+  flex-shrink: 0; */
 }
 .card-heading {
   color:var(--text-color3);
@@ -441,12 +509,21 @@ a {
   font-style: normal;
   font-weight: 700;
   line-height: 3.2rem;
-  margin: 0 6.78rem 0 6.82rem;
+  margin-bottom: 3.2rem;
 }
 .companies {
 }
 .companies-list {
+  display: flex;
+  justify-content:center;
+  gap: 1.99rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.8rem;
 }
+/* .magicfund{
+  display: flex;
+  align-self: flex-;
+} */
 .companies-list-item {
 }
 .companies-list-item-icon {
@@ -454,6 +531,11 @@ a {
 .people {
 }
 .people-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-bottom: 8rem;
 }
 .people-list-item {
 }
@@ -464,6 +546,13 @@ a {
   font-style: normal;
   font-weight: 700;
   line-height: 2.4rem;
+  display: inline-flex;
+  padding: 0.8rem 2rem;
+  /* justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; */
+  border-radius: 1.2rem;
+  border: 2px solid rgba(255, 255, 255, 0.15);
 }
 .footer {
   /* width: 32rem; */
@@ -495,9 +584,8 @@ a {
 .footer-top-item-link-icon {
 }
 .footer-bottom {
-  
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .footer-bottom-link {
   color: var(--text-color2)
