@@ -137,6 +137,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 3.2rem; /* 114.286% */
+  margin-bottom: 2.4rem;
 }
 .super-img{
   position: relative;
@@ -156,10 +157,14 @@ body {
   /* overflow:; */
 }
 .super-list {
-
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:2.4rem;
 }
 .super-list-item {
-  margin: 2.4rem 1.6rem 0 1.6rem;
+  /* margin: 2.4rem 1.6rem 0 1.6rem; */
+  
 }
 .super-list-item-heading {
   
@@ -183,11 +188,14 @@ body {
   /* margin: 8rem 1.6rem 0rem 1.6rem; */
   margin-top: 8rem;
   border-radius: 1.6rem;
-  border: 3px solid #FFD12F;
+  border: 0.3rem solid #FFD12F;
   background: rgba(255, 255, 255, 0.02);
+  padding: 1.6rem 0rem 2.4rem 0rem;
+  text-align: center;
 }
 .section-borapps {
-  margin: 1.6rem 1.4rem 0 1.4rem;
+  /* margin: 1.6rem 1.4rem 0 1.4rem; */
+  
   flex-shrink: 0;
 }
 .border-apps-icon {
@@ -209,7 +217,7 @@ body {
 .border-apps-list {
   /* margin: 1.6rem 1.6rem 0 1.6rem; */
   display: inline-flex;
-  justify-content: space-around;
+  justify-content: center;
   gap: 0.8rem;
   flex-wrap: wrap;
   align-items: center;
@@ -440,13 +448,14 @@ body {
 }
 .club-list {
   margin-top: 2rem;
+  padding-left:1.6rem;
 }
 .club-list-item:not(:last-child) {
   margin-bottom: 1.2rem;
 }
+.club-list-item{
+}
 .club-list-item-icon {
-  background-image: url(/images/Icon_wing.svg);
-  
 }
 .club-list-item-text {
   font-size: 1.4rem;
@@ -454,7 +463,10 @@ body {
   font-weight: 700;
   line-height: 2rem;
   color: var(--text-color1);
-  margin: 0 0 0 2.4rem;
+  /* margin: 0 0 0 2.4rem; */
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
   
 }
 .club-btn {
@@ -527,9 +539,13 @@ body {
   font-weight: 700;
   line-height: 3.2rem;
   color: var(--text-color1);
+  margin-bottom: 2.8rem;
 }
 
 .learn-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .learn-cards-item{
@@ -546,16 +562,17 @@ body {
   height: 12.4rem; */
   flex-shrink: 0;
   background: #1B2A40;
-  margin-top: 15.2rem;
+  /* margin-top: 15.2rem; */
   border-radius: 20px;
   overflow: hidden;
-  max-width: 36.8rem;
-  max-height: 33rem;
+  max-width: 28.8rem;
+  max-height: 30rem;
+  
   
 }
 
 .card-img {
-  max-width: 36.8rem;
+  max-width: 28.8rem;
   max-height: 20rem;
   flex-shrink: 0;
   
@@ -639,6 +656,8 @@ body {
   margin-bottom: 8rem;
 }
 .people-list-item {
+  /* max-width: 13.3rem;
+  max-height: 4rem; */
 }
 .people-list-item-text {
   color: var(--text-color1);
@@ -653,14 +672,15 @@ body {
   align-items: center;
   flex-wrap: wrap; */
   border-radius: 1.2rem;
-  border: 2px solid rgba(255, 255, 255, 0.15);
+  border: 0.2rem solid rgba(255, 255, 255, 0.15);
 }
 .footer {
   /* width: 32rem; */
   /* height: 12rem; */
   flex-shrink: 0;
   background: linear-gradient(180deg, #FFD600 0%, #FFC700 100%);
-  padding: 1.93rem 1.6rem 2.4rem 1.65rem;
+  padding-top: 1.93rem ;
+  padding-bottom: 2.4rem;
 }
 .footer-top{
   display: flex;
@@ -713,20 +733,61 @@ body {
   /* margin: 1.89rem; */
 }
 @media (max-width: 320px) {
-  .container {
-    /* max-width: 28.8rem; */
+  /* .container{
     margin-left: 1.6rem;
     margin-right: 1.6rem;
+  } */
+  .wrapper{
+    max-width: 36.8rem;
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .border-apps-list{
+    justify-content: space-between;
   }
   
+} 
+@media  (min-width: 321px) {
+  .wrapper{
+    max-width: 36.8rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .section-super{
+  }
+
+  .card{
+    max-width: 36.8rem;
+  }
+  .card-img{
+    max-width: 36.8rem;
+    height: auto;
+  }
+  .footer{
+    /* padding-left: 15%;
+    padding-right: 15% ; */
+    
+  }
+
+  .footer-bottom{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3.2rem;
+  }
 }
 
 @media  (min-width: 768px){
-  .container{
-    margin-left: 29.6rem;
-    margin-right: 29.6rem;
+  .wrapper{
+    max-width: 36.8rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
   }
-  
 }
 .dashboard{
   display: grid;
