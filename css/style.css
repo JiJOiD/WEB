@@ -157,8 +157,9 @@ body {
   width: 16.2rem;
 }
 .bg_stars {
-  background-image: url(/images/BGStars.svg), lightgray 0px -0.018px / 100% 98.536% no-repeat;
-  
+  position:relative;
+  background-image: url(/images/BGStars.svg);
+  z-index: -1;
 }
 .section-super {
   margin: 8rem 1.6rem 0 1.6rem;
@@ -193,7 +194,7 @@ body {
 }
 .super-list {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-wrap: wrap;
   gap:2.4rem;
 }
@@ -230,7 +231,8 @@ body {
 }
 .section-borapps {
   /* margin: 1.6rem 1.4rem 0 1.4rem; */
-  
+  max-width: 26rem;
+  margin: auto;
   flex-shrink: 0;
 }
 .border-apps-icon {
@@ -285,6 +287,8 @@ body {
   
 }
 .section-border-systems {
+  max-width: 25.6rem;
+  margin: auto;
 }
 .border-systems-icon {
 }
@@ -581,6 +585,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 0.8rem;
 }
 
 .learn-cards-item{
@@ -590,7 +595,7 @@ body {
   margin-top: 2.8rem;
 }
 .card {
-  display: flex;
+  /* display: flex; */
   justify-content: start;
   flex-wrap: wrap;
   /* width: 28.8rem;
@@ -601,15 +606,17 @@ body {
   border-radius: 20px;
   overflow: hidden;
   max-width: 28.8rem;
-  max-height: 30rem;
+  object-fit: cover; 
+  /* max-height: 30rem; */
   
   
 }
 
 .card-img {
-  max-width: 28.8rem;
-  max-height: 20rem;
+  max-width: 100%;
+  /* max-height: 20rem; */
   flex-shrink: 0;
+  
   
 }
 .card-heading {
@@ -769,14 +776,260 @@ body {
 }
 @media (min-width: 960px) and (max-width: 2560px){
   .wrapper{
-    max-width: 73.6rem;
+    max-width: 114rem;
     margin-left: auto;
     margin-right: auto;
     padding-left: 16px;
     padding-right: 16px;
   }
-  .header-menu{
+  .header-menu,.footer-bottom{
     display: none;
+  }
+  .section-hero-title{
+    text-align: center;
+    text-shadow: 0px 0.4rem 1.8rem rgba(0, 0, 0, 0.30);
+    font-size: 5.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 6rem;
+  }
+  .hero-img::before{
+    height: 30px;
+    bottom: -10%;
+    background-image: url(/images/Underline_1_960.svg);
+  }
+  .section-hero-description{
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.6rem;
+  }
+  .header-link{
+    font-size: 2.2508rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.5016rem; /* 200% */
+    letter-spacing: 0.0409rem;
+  }
+  .super-title{
+    text-align: center;
+    text-shadow: 0px 0.2rem 2.5rem rgba(0, 0, 0, 0.60);
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5.2rem;
+  }
+  .super-img::after{
+    height: 30px;
+    width: 3000%;
+    left: -220%;
+    bottom:-10%;
+    background-image: url(/images/Underline_2_960.svg);
+  }
+  .super-list-item-heading{
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.2rem;
+  }
+  .super-list-item-discription{
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.8rem;
+  }
+  .section-borapps{
+    max-width: 61.3rem;
+  }
+  .border-apps-icon {
+    width: 2rem;
+  }
+  .border-apps-heading{
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.6rem;
+  }
+  .border-apps-list-item-text{
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.2rem;
+  }
+  .section-border-systems{
+    max-width: 64.6rem;
+  }
+  .border-systems-icon {
+    width: 2rem;
+  }
+  .border-systems-heading{
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.6rem;
+  }
+  .border-systems-list{
+    display: flex;
+    justify-content: center;
+    gap: 2.4rem;
+  }
+  .border-systems-list-item{
+    max-width: 31.2rem;
+  }
+  .border-systems-list-item-heading{
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.6rem;
+  }
+  .border-systems-list-item-discription{
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.8rem;
+  }
+  .border-blockchains-icon {
+    width: 2rem;
+  }
+  .border-blockchains-heading{
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.6rem;
+  }
+  .border-blockchains-list-item {
+    padding: 1.2rem 2.6rem 1.2rem 1.6rem;
+    gap: 1.2rem;
+  }
+  .border-blockchains-list-item-text{
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.4rem;
+  }
+  .border-blockchains-list-item-icon-Ethereum {
+    /* background-image: url(/images/Ethereum\ \(ETH\).svg); */
+    display: flex;
+    width: 2.8rem;
+    height: 2.8rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .border-blockchains-list-item-icon-Solana{
+    /* background-image: url(/images/Solana\ \(SOL\).svg); */
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .border-blockchains-list-item-icon-Terra{
+    /* background-image: url(/images/Icon_terra.svg); */
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .border-blockchains-list-item-icon-Polygon{
+    /* background-image: url(/images/Polygon.svg); */
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .border-blockchains-list-item-icon-Binance{
+    /* background-image: url(/images/Binance\ Coin\ \(BNB\).svg); */
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .border-blockchains-list-item-icon-NEAR{
+    /* background-image: url(/images/NEAR\ Protocol\ \(NEAR\).svg); */
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .border-blockchains-list-item-icon-Avalanche{
+    /* background-image: url(); */
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .border-blockchains-list-item-icon-more{
+    /* background-image: url(/images/more.svg); */
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .border-blockchains-list-item-text {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.4rem;
+    color: var(--text-color1);
+    text-align: center;
+  }
+  .club-heading{
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 6rem;
+  }
+  .club-discription{
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.8rem;
+  }
+  .club-list-item-text{
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.2rem;
+  }
+  .club-btn{
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.6rem;
+  }
+  .club-link{
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.6rem;
+  }
+  .learn-img::after{
+    width: 160%;
+    height: 20px;
+    background-image: url(/images/Underline_3_960.svg);
+  }
+  .learn-heading{
+    text-shadow: 0px 2px 25px rgba(0, 0, 0, 0.60);
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5.2rem;
+  }
+  .sponsors-heading{
+    text-shadow: 0px .2rem 2.5rem rgba(0, 0, 0, 0.60);
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5.2rem;
+  }
+  .sponsors-heading-img::before{
+    height: 23px;
+    background-image: url(/images/Underline_4_960.svg);
+  }
+  .footer-top-link{
+    display: none;
+  }
+  .footer-img-big{
+    width: 4.8rem;
+    height: 2.8359rem;
+  }
+  .footer-top-link{
+    text-align: center;
+    color: var(--text-color1);
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.8rem; /* 175% */
+    opacity: 0.9;
+  }
+  .card{
+    max-width: 22.6rem;
   }
   .card{
     max-width: 22.6rem;
@@ -791,25 +1044,251 @@ body {
     padding-left: 16px;
     padding-right: 16px;
   }
-  .header-menu{
+  .header-menu,.footer-bottom{
     display: none;
   }
   .section-hero-title{
     text-align: center;
     text-shadow: 0px 0.4rem 1.8rem rgba(0, 0, 0, 0.30);
-    font-family: PT Mono;
     font-size: 5.2rem;
     font-style: normal;
     font-weight: 700;
     line-height: 6rem;
   }
+  .hero-img::before{
+    height: 30px;
+    bottom: -10%;
+    background-image: url(/images/Underline_1_960.svg);
+  }
   .section-hero-description{
     text-align: center;
-    font-family: PT Mono;
     font-size: 2rem;
     font-style: normal;
     font-weight: 400;
     line-height: 3.6rem;
+  }
+  .header-link{
+    font-size: 2.2508rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.5016rem; /* 200% */
+    letter-spacing: 0.0409rem;
+  }
+  .super-title{
+    text-align: center;
+    text-shadow: 0px 0.2rem 2.5rem rgba(0, 0, 0, 0.60);
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5.2rem;
+  }
+  .super-img::after{
+    height: 30px;
+    width: 3000%;
+    left: -220%;
+    bottom:-10%;
+    background-image: url(/images/Underline_2_960.svg);
+  }
+  .super-list-item-heading{
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.2rem;
+  }
+  .super-list-item-discription{
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.8rem;
+  }
+  .section-borapps{
+    max-width: 61.3rem;
+  }
+  .border-apps-icon {
+    width: 2rem;
+  }
+  .border-apps-heading{
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.6rem;
+  }
+  .border-apps-list-item-text{
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.2rem;
+  }
+  .section-border-systems{
+    max-width: 64.6rem;
+  }
+  .border-systems-icon {
+    width: 2rem;
+  }
+  .border-systems-heading{
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.6rem;
+  }
+  .border-systems-list{
+    display: flex;
+    justify-content: center;
+    gap: 2.4rem;
+  }
+  .border-systems-list-item{
+    max-width: 31.2rem;
+  }
+  .border-systems-list-item-heading{
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.6rem;
+  }
+  .border-systems-list-item-discription{
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.8rem;
+  }
+  .border-blockchains-icon {
+    width: 2rem;
+  }
+  .border-blockchains-heading{
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.6rem;
+  }
+  .border-blockchains-list-item {
+    padding: 1.2rem 2.6rem 1.2rem 1.6rem;
+    gap: 1.2rem;
+  }
+  .border-blockchains-list-item-text{
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.4rem;
+  }
+  .border-blockchains-list-item-icon-Ethereum {
+    /* background-image: url(/images/Ethereum\ \(ETH\).svg); */
+    display: flex;
+    width: 2.8rem;
+    height: 2.8rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .border-blockchains-list-item-icon-Solana{
+    /* background-image: url(/images/Solana\ \(SOL\).svg); */
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .border-blockchains-list-item-icon-Terra{
+    /* background-image: url(/images/Icon_terra.svg); */
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .border-blockchains-list-item-icon-Polygon{
+    /* background-image: url(/images/Polygon.svg); */
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .border-blockchains-list-item-icon-Binance{
+    /* background-image: url(/images/Binance\ Coin\ \(BNB\).svg); */
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .border-blockchains-list-item-icon-NEAR{
+    /* background-image: url(/images/NEAR\ Protocol\ \(NEAR\).svg); */
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .border-blockchains-list-item-icon-Avalanche{
+    /* background-image: url(); */
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .border-blockchains-list-item-icon-more{
+    /* background-image: url(/images/more.svg); */
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .border-blockchains-list-item-text {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.4rem;
+    color: var(--text-color1);
+    text-align: center;
+  }
+  .club-heading{
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 6rem;
+  }
+  .club-discription{
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.8rem;
+  }
+  .club-list-item-text{
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.2rem;
+  }
+  .club-btn{
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.6rem;
+  }
+  .club-link{
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.6rem;
+  }
+  .learn-img::after{
+    width: 160%;
+    height: 20px;
+    background-image: url(/images/Underline_3_960.svg);
+  }
+  .learn-heading{
+    text-shadow: 0px 2px 25px rgba(0, 0, 0, 0.60);
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5.2rem;
+  }
+  .sponsors-heading{
+    text-shadow: 0px .2rem 2.5rem rgba(0, 0, 0, 0.60);
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5.2rem;
+  }
+  .sponsors-heading-img::before{
+    height: 23px;
+    background-image: url(/images/Underline_4_960.svg);
+  }
+  .footer-top-link{
+    display: none;
+  }
+  .footer-img-big{
+    width: 4.8rem;
+    height: 2.8359rem;
+  }
+  .footer-top-link{
+    text-align: center;
+    color: var(--text-color1);
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.8rem; /* 175% */
+    opacity: 0.9;
   }
   .card{
     max-width: 22.6rem;
@@ -823,7 +1302,7 @@ body {
     padding-left: 16px;
     padding-right: 16px;
   }
-  .header-links, .header-twitter{
+  .header-links,.footer-top-big, .header-twitter,.super-list-item-img,.footer-img-big{
     display: none;
   }
   .section-super{
@@ -853,7 +1332,7 @@ body {
     margin-left: 1.6rem;
     margin-right: 1.6rem;
   } */
-  .header-links,.header-twitter{
+  .header-links,.footer-top-big,.header-twitter,.footer-img-big,.super-list-item-img{
     display: none;
   }
   .wrapper{
