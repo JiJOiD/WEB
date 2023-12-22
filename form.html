@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=PT+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Home page</title> 
+</head>
+<body>
+    <header class="header bg_stars ">
+        <div class="header-container wrapper">
+            <a class="header-link superdao" href=""><img class="logo" src="images/Logo Full.svg" alt="">Superdao</a>
+            <ul class="header-links wrapper a">
+                <li class="header-links-item"><a class="header-links-link a" href="">Roadmap club</a></li>
+                <li class="header-links-item"><a class="header-links-link a" href="">About</a></li>
+                <li class="header-links-item"><a class="header-links-link a" href="">Jobs</a></li>
+            </ul>
+            <button class="header-menu">
+                <img class="header-menu-icon" src="/images/ic-burger-glyph-24.svg" alt="">
+            </button>
+            <a class="header-twitter a" href=""><img class="header-twitter-img" src="/images/icons8-twitter 1.svg" alt="">Twitter</a>
+        </div>
+    </header>
+    <main>
+        <form class="form" action="//httpbin.org/post" method="POST">
+                <div class="container_form_page">
+                    <h2 class="hero_h1-form">Оставить заявку</h2>
+                    <form class="contact-form" action="https://httpbin.org/" method="post">
+                        <fieldset>
+                            <legend class="hero_h2-form">Личная информация:</legend>
+                            <label class="form_text" for="name">Имя:<span>*</span></label>
+                            <input class="input1" type="text" id="name" name="name" placeholder="Иван" required>
+                            <label class="form_text" for="dob">Дата рождения:<span>*</span></label>
+                            <input class="input1" type="date" id="dob" name="dob" required>
+                            <label class="form_text">Пол:<span>*</span></label>
+                            <div class="gender">
+                                <label class="gender" for="male">
+                                    <input type="radio" id="male" name="gender" value="male" required>
+                                    <span class="span_text">Мужской</span>
+                                </label>
+                                <label class="gender" for="female">
+                                    <input  type="radio" id="female" name="gender" value="female" required>
+                                    <span class="span_text">Женский</span>
+                                </label>
+                            </div>
+                        </fieldset>
+            
+                        <fieldset>
+                            <legend class="hero_h2-form">Контактные данные:</legend>
+                            <label class="form_text" for="password">Пароль:<span>*</span></label>
+                            <input class="input1" type="password" id="password" name="password" required>
+                            <label class="form_text" for="email">Email:</label>
+                            <input class="input2" type="email" id="email" name="email" placeholder="example@example.com">
+                            <label class="form_text" for="phone">Телефон:<span>*</span></label>
+                            <input class="input1" type="tel" id="phone" name="phone" placeholder="+7 123-456-7890" required>
+                            <label class="form_text">Удобный интервал для связи:<span>*</span></label>
+                            <select class="input1" name="contact_interval" required>
+                                <option value="" disabled selected hidden>Выберите интервал</option>
+                                <option value="morning">Утро</option>
+                                <option value="day">День</option>
+                                <option value="evening">Вечер</option>
+                                <option value="night">Ночь</option>
+                            </select>
+                        </fieldset>
+            
+                        <div>
+                            <button class="club-btn" type="submit">
+                                <span>Отправить</span>
+                            </button>
+                            <button class="club-btn" type="reset">
+                                <span>Сбросить</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </label>
+
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="footer-top wrapper">
+                <a href="/grid.html"><img class="footer-img-big" src="/images/Logo_footer.svg" alt=""></a>
+                <a class="footer-top-link" href="/grid.html"><img class="footer-top-logo" src="/images/Logo_footer.svg" alt="">Superdao</a>
+            <ul class="footer-top-big">
+                <li class="footer-top-item"><a class="footer-top-link-big a" href="/form.html">Form</a></li>
+                <li class="footer-top-item"><a class="footer-top-link-big a" href="">About</a></li>
+                <li class="footer-top-item"><a class="footer-top-link-big a" href="">Jobs</a></li>
+            </ul>
+            <ul class="footer-top-list">
+                <li class="footer-top-list-item"><a class="footer-top-list-item-link" href=""><img class="footer-top-item-link-icon" src="/images/Icon_twitter.svg" alt=""></a></li>
+                <li class="footer-top-list-item"><a class="footer-top-list-item-link" href=""><img class="footer-top-item-link-icon" src="/images/Icon_telegram.svg" alt=""></a></li>
+                <li class="footer-top-list-item"><a class="footer-top-list-item-link" href=""><img class="footer-top-item-link-icon" src="/images/Icon_email.svg" alt=""></a></li>
+            </ul>
+        </div>
+        <ul class="footer-bottom wrapper">
+            <li class="footer-bottom-item"><a class="footer-bottom-link a" href="/form.html">Form</a></li>
+            <li class="footer-bottom-item"><a class="footer-bottom-link a" href="">About</a></li>
+            <li class="footer-bottom-item"><a class="footer-bottom-link a" href="">Jobs</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
