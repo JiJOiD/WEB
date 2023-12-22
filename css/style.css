@@ -652,6 +652,53 @@ body {
   
   
 }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.loader {
+  border: 8px solid var(--text-color3);
+  border-top: 8px solid #ffffff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 7s linear infinite, fadeOut 5s ease-out 5s forwards;
+
+  position: absolute;
+  /* left: 43%;
+  bottom: -435%; */
+  z-index: 2;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.aim {
+  max-width: 100%;
+  animation: fadein 35s;
+  position: relative;
+  z-index: 1;
+}
 
 .card-img {
   max-width: 100%;
@@ -1221,6 +1268,10 @@ textarea {
     max-width: 35rem;
     height: 37.5rem;
   }
+  .loader{
+    /* bottom: -274%;
+    left: 66%; */
+  }
 }
 
 @media  (min-width: 768px) and (max-width: 959px){
@@ -1497,6 +1548,10 @@ textarea {
     max-width: 22.6rem;
     height: 33rem;
   }
+  .loader{
+    /* bottom: -267%;
+    left: 47%; */
+  }
 }
 @media (min-width:397px) and (max-width: 767px){
   .wrapper{
@@ -1505,6 +1560,10 @@ textarea {
     margin-right: auto;
     padding-left: 16px;
     padding-right: 16px;
+  }
+  .loader{
+    /* bottom: -422%;
+    left: 44%; */
   }
   .header-links,.footer-top-big, .header-twitter,.super-list-item-img,.footer-img-big,.footer-link-big{
     display: none;
@@ -1634,5 +1693,7 @@ textarea {
   grid-row-start: 1;
 }
 /* Форма */
-
+.anim:hover{
+  transform: rotate(30deg) scale(1.5);
+}
 
