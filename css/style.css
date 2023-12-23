@@ -415,6 +415,9 @@ body {
 
 
 }
+.border-blockchains-list-item:nth-child(even){
+  background: rgba(203, 242, 9, 0.559);
+}
 .border-blockchains-list-item-icon-Ethereum {
   /* background-image: url(/images/Ethereum\ \(ETH\).svg); */
   display: flex;
