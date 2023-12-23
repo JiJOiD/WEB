@@ -13,6 +13,7 @@
     <title>Home page</title> 
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header class="header bg_stars ">
         <div class="header-container wrapper">
             <a class="header-link superdao" href="/index.html"><img class="logo" src="images/Logo Full.svg" alt="">Superdao</a>
@@ -23,11 +24,12 @@
             </nav>
             <button class="header-menu">
                 <img class="header-menu-icon" src="/images/ic-burger-glyph-24.svg" alt="">
+                <span class="sr-only">Открыть меню</span>
             </button>
             <a class="header-twitter a" href=""><img class="header-twitter-img" src="/images/icons8-twitter 1.svg" alt="">Twitter</a>
         </div>
     </header>
-    <main class="main">
+    <main class="main" id="main-content">
         <section class="section-hero bg_stars">
             <div class=" wrapper ">
                 <h1 class="section-hero-title">Modern infrastructure for <span class="hero-img">DAOs</span></h1>
@@ -60,34 +62,34 @@
         <section class="section-border wrapper ">
             <div class="">
                 <div class="section-borapps">
-                    <h3 class="border-apps-heading"><img class="border-apps-icon" src="images/Icon_wing.svg" alt="">Apps</h3>
+                    <h3 class="border-apps-heading"><img class="border-apps-icon" src="images/Icon_wing.svg" alt="Apps">Apps</h3>
                     <ul class="border-apps-list">
                         <li class="border-apps-list-item">
-                            <img class="border-apps-list-item-circle-1" src="/images/Icon_1.svg"></img>
+                            <img class="border-apps-list-item-circle-1" src="/images/Icon_1.svg" alt="Voting">
                             <p class="border-apps-list-item-text">Voting</p>
                         </li>
                         <li class="border-apps-list-item">
-                            <img class="border-apps-list-item-circle-2 " src="/images/Icon_2.svg"></img>
+                            <img class="border-apps-list-item-circle-2 " src="/images/Icon_2.svg" alt="Payroll">
                             <p class="border-apps-list-item-text">Payroll</p>
                         </li>
                         <li class="border-apps-list-item">
-                            <img class="border-apps-list-item-circle-3" src="/images/Icon_3.svg"></img>
+                            <img class="border-apps-list-item-circle-3" src="/images/Icon_3.svg" alt="Chat">
                             <p class="border-apps-list-item-text">Chat</p>
                         </li>
                         <li class="border-apps-list-item">
-                            <img class="border-apps-list-item-circle-4" src="/images/Icon_3.svg"></img>
+                            <img class="border-apps-list-item-circle-4" src="/images/Icon_3.svg" alt="Treasury">
                             <p class="border-apps-list-item-text">Treasury</p>
                         </li>
                         <li class="border-apps-list-item">
-                            <img class="border-apps-list-item-circle-5" src="/images/Icon_6.svg"></img>
+                            <img class="border-apps-list-item-circle-5" src="/images/Icon_6.svg" alt="Member updates">
                             <p class="border-apps-list-item-text">Member updates</p>
                         </li>
                         <li class="border-apps-list-item">
-                            <img class="border-apps-list-item-circle-6" src="/images/Icon_4.svg"></img>
+                            <img class="border-apps-list-item-circle-6" src="/images/Icon_4.svg">
                             <p class="border-apps-list-item-text">Grants</p>
                         </li>
                         <li class="border-apps-list-item">
-                            <img class="border-apps-list-item-circle-7" src="/images/Icon_7.svg"></img>
+                            <img class="border-apps-list-item-circle-7" src="/images/Icon_7.svg">
                             <p class="border-apps-list-item-text">+more</p>
                         </li>
                     </ul>
@@ -236,24 +238,39 @@
     </main>
     <footer class="footer">
         <div class="footer-top wrapper">
-            <a class="footer-link-big" href="/grid.html"><img class="footer-img-big" src="/images/Logo_footer.svg" alt=""></a>
-            <a class="footer-top-link" href="/grid.html"><img class="footer-top-logo" src="/images/Logo_footer.svg" alt="">Superdao</a>
+            <a class="footer-link-big" href="/index.html"><img class="footer-img-big" src="/images/Logo_footer.svg" alt=""><span class="sr-only">Вернуться на главную страницу</span></a>
+            <a class="footer-top-link" href="/index.html"><img class="footer-top-logo" src="/images/Logo_footer.svg" alt="">Superdao</a>
             <ul class="footer-top-big">
                 <li class="footer-top-item"><a class="footer-top-link-big a" href="/form.html">Form</a></li>
-                <li class="footer-top-item"><a class="footer-top-link-big a" href="">About</a></li>
+                <li class="footer-top-item"><a class="footer-top-link-big a" href="/grid.html">Grid</a></li>
                 <li class="footer-top-item"><a class="footer-top-link-big a" href="">Jobs</a></li>
             </ul>
             <ul class="footer-top-list">
-                <li class="footer-top-list-item"><a class="footer-top-list-item-link" href=""><img class="footer-top-item-link-icon" src="/images/Icon_twitter.svg" alt=""></a></li>
-                <li class="footer-top-list-item"><a class="footer-top-list-item-link" href=""><img class="footer-top-item-link-icon" src="/images/Icon_telegram.svg" alt=""></a></li>
-                <li class="footer-top-list-item"><a class="footer-top-list-item-link" href=""><img class="footer-top-item-link-icon" src="/images/Icon_email.svg" alt=""></a></li>
+                <li class="footer-top-list-item">
+                    <a class="footer-top-list-item-link" href="">
+                        <img class="footer-top-item-link-icon" src="/images/Icon_twitter.svg" alt="">
+                        <span class="sr-only">Перейти в Twitter</span>
+                    </a>
+                </li>
+                <li class="footer-top-list-item">
+                    <a class="footer-top-list-item-link" href="">
+                        <img class="footer-top-item-link-icon" src="/images/Icon_telegram.svg" alt="">
+                        <span class="sr-only">Перейти в Telegram</span>
+                    </a>
+                </li>
+                <li class="footer-top-list-item">
+                    <a class="footer-top-list-item-link" href="">
+                        <img class="footer-top-item-link-icon" src="/images/Icon_email.svg" alt="">
+                        <span class="sr-only">Написать на почту</span>
+                    </a>
+                </li>
             </ul>
         </div>
-        <nav class="footer-bottom wrapper">
+        <ul class="footer-bottom wrapper">
             <li class="footer-bottom-item"><a class="footer-bottom-link a" href="/form.html">Form</a></li>
-            <li class="footer-bottom-item"><a class="footer-bottom-link a" href="">About</a></li>
-            <li class="footer-bottom-item"><a class="footer-bottom-link a" href="">Jobs</a></li>
-        </nav>
+            <li class="footer-bottom-item"><a class="footer-bottom-link a" href="/grid.html">Grid</a></li>
+            <li class="footer-bottom-item"><a class="footer-bottom-link a" href="">Jobs</a></li> 
+        </ul>
     </footer>
 </body>
 </html>

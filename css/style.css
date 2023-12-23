@@ -494,7 +494,7 @@ body {
   /* height: 40.4rem; */
   flex-shrink: 0;
   border-radius: 1.6rem;
-  background: linear-gradient(123deg, #A96BF7 2.02%, #3103B5 101.68%);
+  background: linear-gradient(123deg, #623599 2.02%, #3103B5 101.68%);
   padding: 1.6rem 0rem 1.6rem 0rem;
 }
 .club-heading {
@@ -575,13 +575,13 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 1.2rem;
-  background: rgba(255, 255, 255, 0.15);
+  background: #FFB800 ;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 700;
   line-height: 3.2rem;
   text-align: center;
-  color: var(--text-color1);
+  color: var(--text-color2);
   /* height: 4.8rem; */
   margin: 1.2rem auto 0 auto;
   max-width: 25.6rem;
@@ -808,7 +808,7 @@ body {
   /* width: 32rem; */
   /* height: 12rem; */
   flex-shrink: 0;
-  background: linear-gradient(180deg, #FFD600 0%, #FFC700 100%);
+  background: linear-gradient(180deg, #ffe100 0%, #ffbf00 100%);
   padding-top: 1.93rem ;
   padding-bottom: 2.4rem;
 }
@@ -851,14 +851,14 @@ body {
   justify-content: space-around;
 }
 .footer-bottom-link {
-  color: var(--text-color2)
+  color: var(--text-color2);
 }
 .footer-bottom-item  {
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 700;
   line-height: 2.4rem;
-  opacity: 0.7;
+  opacity: 2;
   
   /* margin: 1.89rem; */
 }
@@ -1692,8 +1692,33 @@ textarea {
   grid-column: -1/1;
   grid-row-start: 1;
 }
-/* Форма */
+
 .anim:hover{
   transform: rotate(30deg) scale(1.5);
 }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+.skip-link {
+  position: absolute;
+  background-color: var(--text-color2);
+  color: #fff;
+  padding: 2px;
+  display: block;
+  z-index: 1000;
+  text-decoration: none;
+  opacity: 0.3;
+}
 
+/* Стили для skip link при фокусировке */
+.skip-link:focus {
+  top: 0;
+}
